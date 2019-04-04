@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>MyPortfolio</title>
+	<meta name="description" content="My first portfolio">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#5D4D16">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header class="header-foto container-fluid">
+		<img src="img/01.jpg" alt="Надо! Заказать сайт" class="orang img-responsive" title="Надо! Заказать сайт">
+		<div class="header-content">
+			<nav class="language">
+				<a href="#">Ru</a>
+				<a href="#">En</a>
+				<a href="#">He</a>
+			</nav>
+			<div class="ellipse-01"></div>
+			<div class="ellipse-02"></div>
+			<div class="btn header-btn"><a href="#modal">
+					<p id='btn-need'>Надо бы,</p>
+					<p>Заказать</p>
+					<p>сайт</p>
+				</a></div>
+		</div>
+	</header>
+	<div class="section">
+		<main>
+			<img src="img/avatar.png" alt="Anatoly Brodskiy" class="avatar" title="Anatoly Brodskiy">
+			<p>Привет! Я Анатолий.</p>
+			<p>Мне приятно предложить свою помощь в создании Вашего сайта.</p>
+			<p>Я помогу сделать его современным, удобным, эффективным, адаптивным для разных размеров экрана и быстрым в
+				загрузке, дружественным для поисковых систем.</p>
+			<p>Присылайте Ваши пожелания на электронную почту, WhatsApp или SMS, в личные сообщения в соц. сетях, а также, через
+				форму этой страницы</p>
+		</main>
+
+		<div class="btn main-btn"><a href="#modal">
+				<p>Заказать</p>
+				<p>сайт</p>
+			</a>
+		</div>
+	</div>
+
+	<section class="gallery">
+
+		<h2><a href="#">Галерея</a></h2>
+
+		<div class="items">
+			<a href="#">
+				<div class="item item-1" style="background-image: url(img/01.jpg); background-size: cover; background-repeat: no-repeat;">
+					<!-- <h3>item-1</h3> -->
+				</div>
+			</a>
+			<a href="#">
+				<div class="item item-2">
+					<h3>item-2</h3>
+				</div>
+			</a>
+			<a href="#">
+				<div class="item item-3">
+					<h3>item-3</h3>
+				</div>
+			</a>
+		</div>
+
+		<!-- <div class="btn gallery-more">
+			<a href="#slider">ещё</a>
+		</div> -->
+
+	</section>
+
+	<footer class="footer">
+		<div class="footer-content">
+
+			<div class="logo">
+				<img src="img/logo.png" alt="logo" class="img-responsive">
+			</div>
+
+			<div class="copyright">
+				<p>&copy Студия "Scorp" Анатолия Бродского</p>
+			</div>
+
+			<div class="soc">
+				<div><a href="https://vk.com/abr2013"><i class="fa fa-vk"></i></a></div>
+				<div><a href="https://www.facebook.com/profile.php?id=100009140825469"><i class="fa fa-facebook"></i></a></div>
+				<div><a href="https://ok.ru/profile/161413583538"><i class="fa fa-odnoklassniki"></i></a></div>
+				<!-- <div><a href=""><i class="fa fa-instagram"></i></a></div>
+					 <div><a href="#"><i class="fa fa-rss"></i></a></div> -->
+			</div>
+			<div class="contact">
+				<p>E-Mail: scorpab@mail.ru</p>
+				<div class="separator"></div>
+				<p>Phone / WhatsApp: +972-53-23-11-647</p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal" id="modal">
+		<div class="modal-content">
+			<a href="#" class="modal-close">&times</a>
+			<div class="modal-body">
+				<h3 class="modal-head">Напишите Ваши пожелания</h3>
+				<textarea name="text" id="text" resize=none maxlength="700" placeholder="Ваше сообщение..."></textarea><br>
+				<input type="text" name="Name" id="name" placeholder="Ваше имя...*" required><br>
+				<input type="email" name="E-Mail" id="email" placeholder="Ваша почта...*" required><br>
+				<input type="tel" name="Phone" id="phone" placeholder="Ваш телефон..."><br>
+				<input type="file" class="selection" multiple><br>
+				<button type="submit" class="send">Отправить</button>
+				<p>* - Пожалуйста, обязательно заполните эти поля.</p>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
