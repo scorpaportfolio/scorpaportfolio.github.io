@@ -1,4 +1,4 @@
-$(function() {
+// $(function() {
 
 	$(document).ready(function () {
 
@@ -17,4 +17,4 @@ $(function() {
 
 	});
 
-});
+// });
