@@ -2,7 +2,7 @@
 
 	$(document).ready(function () {
 
-		$("#modal").submit(function () {
+		$("#modal-body").submit(function () {
 			$.ajax({
 				type: "POST",
 				url: "mail.php",
@@ -10,7 +10,7 @@
 			}).done(function () {
 				$(this).find("input").val("");
 				alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-				$("#modal").trigger("reset");
+				$("#modal-body").trigger("reset");
 			});
 			return false;
 		});
