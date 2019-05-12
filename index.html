@@ -25,6 +25,12 @@
 	<link rel="stylesheet" href="css/main.min.css">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
+	<!-- <script>
+		function resizeIframe(obj) {
+			obj.style.height = obj.contentWindow.document.body.scrollHeight + 'vh';
+			}
+	</script> -->
+
 </head>
 
 <body>
@@ -126,11 +132,39 @@
 	<div class="modal" id="modal">
 		<div class="modal-content">
 			<a href="#" class="modal-close">&times</a>
+			<div class="google-form">
+				<form class="modal-body"
+					action="https://docs.google.com/forms/d/e/1FAIpQLSeKV4FEO-BiqAJ3ka5kYJ4KT1zR6H9-hgn2q7hy8gWRFte1wg/formResponse"
+					method="POST">
 
-			<iframe
-				src="https://docs.google.com/forms/d/e/1FAIpQLSeKV4FEO-BiqAJ3ka5kYJ4KT1zR6H9-hgn2q7hy8gWRFte1wg/viewform?embedded=true"
-				width="98%" height="98%" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
+					<!-- Hidden Required Fields -->
+					<!-- <input type="hidden" name="project_name" value="MyPortfolio">
+					<input type="hidden" name="admin_email" value="scorpab@mail.ru">
+					<input type="hidden" name="form_subject" value="Заявка"> -->
+					<!-- END Hidden Required Fields -->
 
+					<h3 class="modal-head">Напишите Ваши пожелания</h3>
+					<textarea name="text" id="text" name="entry.1951962607" resize=none maxlength="700"
+						placeholder="Ваше сообщение..."></textarea><br>
+					<input type="text" name="entry.1964315946" id="name" placeholder="Ваше имя...*" required><br>
+					<input type="email" name="emailAddress" id="email" placeholder="Ваша почта...*" required><br>
+					<input type="tel" name="entry.1184843850" id="phone" placeholder="Ваш телефон..."><br>
+
+					<input type="submit" class="send" value="Send"/>
+					<p>* - Пожалуйста, обязательно заполните эти поля.</p>
+
+				</form>
+				<!-- <iframe
+					src="https://docs.google.com/forms/d/e/1FAIpQLSeKV4FEO-BiqAJ3ka5kYJ4KT1zR6H9-hgn2q7hy8gWRFte1wg/viewform?embedded=true"
+					frameborder="0" scrolling="no" width="100%" height="100%" marginheight="0" marginwidth="0"
+					>Загрузка...</iframe> -->
+
+				<div class="google-form_send-file">
+					<p class="google-form_rubrik">Если у Вас есть файл с эскизом, Вы можете переслать его<br> <a href=""
+							class="modal_link">здесь</a>
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 
